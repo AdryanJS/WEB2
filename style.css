@@ -29,3 +29,19 @@ button {
     align-items: flex-start;
     gap: 100px;
 }
+
+.menuimagem {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 30px;
+}
+
+.menuimagem img {
+    width: 450px;
+    height: auto;
+}
+
+.linkuniversal {
+    width: 300px;
+}
