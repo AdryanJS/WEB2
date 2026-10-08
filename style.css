@@ -29,3 +29,13 @@ button {
     align-items: flex-start;
     gap: 100px;
 }
+
+table {
+  width: 100%;
+  border-collapse: separate; /* Permite cantos arredondados */
+  border-spacing: 0;          /* Remove espaço extra entre as células */
+  border: 10px solid #2edfe6;     /* Borda externa */
+  border-radius: 12px;        /* Define o arredondamento dos cantos */
+  overflow: hidden;           /* Corta o fundo das células nos cantos */
+}
+
