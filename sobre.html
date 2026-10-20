@@ -1,49 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-<style>
-     .arredondada {
-            border: 4px solid rgb(58, 183, 233);
-            border-radius: 15px;
-            padding: 15px;
+    <!-- CSS Incorporado e Temático -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f9fa;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
         }
 
-</style>
+        .cabeçalho {
+            background-color: #d4e0d4; /* Verde Lagarta */
+            color: rgb(31, 29, 29);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
 
+        .cabeçalho h1 {
+            margin: 0;
+            font-size: 36px;
+        }
 
+        nav {
+            margin: 20px 0;
+            ;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            background-color: #ff4757; /* Vermelho Maçã */
+            color: white !important; /* Sobrescreve o estilo inline anterior */
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e84118;
+            transform: scale(1.05);
+            display: inline-block;
+        }
+
+        .arredondada {
+            border: 4px dashed rgb(58, 183, 233); /* Linha tracejada lembra trilho */
+            border-radius: 15px;
+            padding: 25px;
+            background-color: #ffffff;
+            line-height: 1.6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 15px;
+            border: 5px solid #4CAF50; /* Borda verde na foto */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #ddd;
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-    <div class="cabeçalho">
-    <h1>Sobre</h1>
+        <div class="cabeçalho">
+            <h1>Sobre</h1>
+        </div>
     </header>
-    <br>
 
-    </div>
-      <nav>
-        <a style="color: blueviolet;" href="index.html">Index</a>
+    <nav>
+        <a href="index.html">Voltar para o Index</a>
     </nav>
+    
     <hr>
-    <br>
-<p style="font-size: 25px;color: rgb(255, 102, 0);" class="arredondada"> A famosa montanha-russa infantil em formato de lagarta (muito comum em parques itinerantes como o Universal Park) é um clássico nostálgico e super divertido que encanta gerações de crianças.<br> A famosa montanha-russa da lagarta — conhecida tecnicamente como Brucomela ou popularmente apelidada de Minhoquinha — é uma das atrações mais icônicas, nostálgicas e queridas dos parques de diversões itinerantes e fixos pelo Brasil, incluindo a estrutura do próprio Universal Park.
-<br> O visual do brinquedo é inconfundível: o trem da montanha-russa tem o formato de uma grande lagarta verde com olhos expressivos e sorriso amigável. Os trilhos costumam simular o caminho do inseto, passando frequentemente por dentro de uma estrutura que imita uma maçã gigante gigante e mordida, criando um efeito visual lúdico perfeito para fotos.</p>
-<img src="universalpark.jpeg" alt="">
-<br>
-<hr>
-<br>
 
+    <p style="font-size: 20px; color: #2f3542;" class="arredondada"> 
+        A famosa montanha-russa infantil em formato de lagarta (muito comum em parques itinerantes como o Universal Park) é um clássico nostálgico e super divertido que encanta gerações de crianças.<br><br>
+        A famosa montanha-russa da lagarta — conhecida tecnicamente como Brucomela ou popularmente apelidada de Minhoquinha — é uma das atrações mais icônicas, nostálgicas e queridas dos parques de diversões itinerantes e fixos pelo Brasil, incluindo a estrutura do próprio Universal Park.<br><br>
+        O visual do brinquedo é inconfundível: o trem da montanha-russa tem o formato de uma grande lagarta verde com olhos expressivos e sorriso amigável. Os trilhos costumam simular o caminho do inseto, passando frequentemente por dentro de uma estrutura que imita uma maçã gigante e mordida, criando um efeito visual lúdico perfeito para fotos.
+    </p>
 
+    <img src="universalpark.jpeg" alt="Montanha-russa infantil de lagarta no Universal Park">
 
+    <hr>
 
 </body>
 </html>
-
-
