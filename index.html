@@ -19,14 +19,36 @@
 
         <br>
         
-        <nav>
-            <a style="color: red;" href="sobre.html">Sobre</a>
-            <a style="color: aqua;" href="produtos.html">Produtos</a>
-            <a style="color: blueviolet;" href="serviços.html">Serviços</a>
-            <a style="color: brown;" href="parceiros.html">Parceiros</a>
-            <a style="color: chocolate;" href="portfolio.html">Portfolio</a>
-            <a style="color: chartreuse;" href="ouvidoria.html">Ouvidoria</a>
-        </nav>
+ <nav>
+    <ul>
+        <li style="color: aqua;"><a href="index.html">Home</a></li>
+
+        <li style="color: blue;" class="dropdown">
+            <a href="sobre.html">Sobre ▼</a>
+            <ul style="padding: 2px;">
+                <li style="color: blue;"><a href="sobre.html">Nossa história</a></li>
+                <li style="color: blue;"><a href="parceiros.html">Parceiros</a></li>
+                <li style="color: blue;"><a href="portfolio.html">Portfólio</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Produtos ▼</a>
+            <ul style="padding: 3px;">
+                <li><a href="produtos.html">Nossos produtos</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Serviços ▼</a>
+            <ul style="padding: 3px;">
+                <li><a href="serviços.html">Nossos serviços</a></li>
+            </ul>
+        </li>
+
+        <li><a href="ouvidoria.html">Ouvidoria</a></li>
+    </ul>
+</nav>  
     </header>
 
     <aside>
@@ -48,11 +70,49 @@
         <p>O <strong>Universal Park</strong> é referência em entretenimento e diversão para toda a família! Contando com brinquedos modernos, atrações de alta adrenalina e uma estrutura completa de segurança, nosso parque itinerante leva a magia dos grandes parques de diversões para diversas cidades do Brasil.</p>
 
         <p>Aqui você encontra desde atrações clássicas e infantis até brinquedos radicais para os amantes de emoção — tudo preparado com muito carinho para garantir momentos inesquecíveis.</p>
+  
+        <div class="pilha">
+    <img src="cachorroquente.png" onclick="sumir(this)" alt="Foto 1">
+    <img src="cocacola.jpg" onclick="sumir(this)" alt="Foto 2">
+    <img src="sucodesamba.png" onclick="sumir(this)" alt="Foto 3">
+    <img src="ChatGPT Image 15 de set. de 2026, 09_35_44.png" onclick="sumir(this)" alt="Foto 4">
+    <img src="sucodelagarta.png" onclick="sumir(this)" alt="Foto 5">
+    <img src="empadao.png" onclick="sumir(this)" alt="Foto 6">
+    <!-- A última imagem traz todas de volta -->f
+    <img src="pecasultra.png" onclick="mostrarTodas()" alt="Foto 7">
+</div>
+
+
+
     </main>
 
     <footer>
         <p>© 2026 Universal Park. Todos os direitos reservados. | Termos de Uso | Política de Privacidade | Contato</p>
     </footer>
+
+
+<script>
+    function sumir(imagem) {
+        imagem.classList.add('escondida');
+    }
+
+    function mostrarTodas() {
+        const imagens = document.querySelectorAll('.pilha img');
+        imagens.forEach(img => {
+            img.classList.remove('escondida');
+        });
+    }                       
+    </script>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 </html>
